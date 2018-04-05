@@ -1,0 +1,294 @@
+div.containerplus{
+  width:auto;
+  height:260px;
+  background-color: #EAF9FB;
+}
+
+img.logo{
+  position:absolute;
+  height:270px;
+}
+
+img.footerLogo{
+  height: 200px;
+  margin-top: 20px;
+}
+
+img.HELPLogo{
+  height: 100px;
+  margin-top: 40px;
+}
+
+img.AGNLogo{
+  height: 100px;
+  margin-top: 80px;
+}
+
+div.footer{
+  background-color: #EAF9FB;
+  width:100%;
+  height: auto;
+}
+
+li.footerText{
+  font-family: 'RockWell';
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.line{
+  border-width: 2;
+  border-color: #04CCE2;
+}
+
+.aboutUs{
+  font-family: "RockWell";
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #00383e;
+}
+
+.register{
+  height: auto;
+  margin-bottom: 20px;
+  background-color: #EAF9FB;
+  border-radius: 10px;
+}
+
+.register > input{
+  margin-top: 35px;
+  width: 100%;
+}
+
+.login{
+  height: auto;
+  margin: 20px;
+  background-color: #EAF9FB;
+  border-radius: 10px;
+  padding:20px;
+}
+
+.loginText{
+  font-weight: bold;
+  height: 60px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 507px;
+  margin-bottom: -30px;
+  margin-left: -10px;
+  color: #00383e;
+}
+
+.login > input{
+  margin-top: 35px;
+  width: 100%;
+}
+
+.loginBtn{
+  margin-top: 50px;
+  margin-left: 130px;
+  background-color: #FBA16C;
+  height: 60px;
+  width: 200px;
+  border-radius: 8px;
+  color: white;
+  font-size:23px;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.aboutUsContent
+{
+  text-align: justify;
+  line-height: 2;
+}
+
+ul.ul{
+  list-style:none;
+}
+
+div.topIcon{
+  padding: 0;
+  width:auto;
+}
+
+div:hover.topIcon{
+  transition: .4s;
+  opacity: 0.3;
+}
+
+div.icon{
+  padding: 0;
+  width:auto;
+}
+
+div:hover.icon{
+  transition: .4s;
+  opacity: 0.7;
+}
+
+.homePic{
+  height: 400px;
+}
+
+.title{
+  height: auto;
+  width: 100%;
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  font-family: 'RockWell';
+  font-weight: bold;
+}
+
+.aboutJinjangTitle{
+  color: #00383e;
+  font-family: 'RockWell';
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.aboutJinjang{
+  color: #00383e;
+  font-family: 'RockWell';
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.readMoreBtn{
+  background-color: transparent;
+  height: 50px;
+  width: 120px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #00383e;
+  color: #00383e;
+  font-size:15px;
+  font-weight: bold;
+  font-family: 'RockWell';
+}
+
+.homeBar{
+  background-color: #EAF9FB;
+  margin-top: 10px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.homeBar2{
+  background-color: #EAF9FB;
+  margin-top: 10px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.homeBarfont{
+  color: #00383e;
+  font-family: 'RockWell';
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.homeBarBtn{
+  margin-top: 50px;
+  background-color: transparent;
+  height: 80px;
+  width: 250px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #00383e;
+  color: #00383e;
+  font-size:23px;
+  font-weight: bold;
+  font-family: 'RockWell';
+  margin-bottom: 10px;
+}
+
+.storyTitle{
+    font-size: 30px;
+    font-family: 'RockWell';
+}
+
+.story{
+  color: #00383e;
+  font-family: 'RockWell';
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.navbar-custom{
+  margin-top: 5px;
+  background-color: white;
+  z-index:1;
+  width:auto;
+}
+
+.contact{
+  margin-right: -80px;
+}
+.affix {
+  top: -10px;
+  width: 100%;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+
+ul.navbar-nav{
+  font-family: 'Proxima Nova Soft','Helvetica Neue',sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 30px;
+  float: right;
+  padding:5px;
+}
+
+.navbar-custom .navbar-nav >.logOut > a{
+  border-radius: 7px;
+  background-color: #FBA16C;
+  color: black;
+}
+
+.navbar-custom .navbar-nav >.logOut > a:hover{
+  background-color: #FBA16C;
+  border-color: black;
+}
+
+ul.navbar-nav >li> a{
+  letter-spacing: 1px;
+  border-style:solid;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 7px;
+  color:black;
+  margin-right: 10px;
+}
+
+.navbar-custom .navbar-nav >.active >a {
+  border-style:solid;
+  border-width: 2px;
+  border-radius: 7px;
+  background-color: #04CCE2;
+  color:black;
+}
+
+.navbar-custom .navbar-nav >.active >a:hover {
+  background-color: #04CCE2;
+  border-color: white;
+}
+
+ul.navbar-nav> li > a:hover{
+  border-style:solid;
+  border-width: 2px;
+  border-color: black;
+  transition: .5s;
+  background-color: white;
+}

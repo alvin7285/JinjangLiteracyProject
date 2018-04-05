@@ -1,0 +1,120 @@
+<template name="login">
+  <head>
+    <link rel="stylesheet" href="style.css">
+
+    <title>
+        Jinjang Literacy Project
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <!--Include JQuery: necessary for Bootstrap plugins-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Include bootstrap library as needed-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <div class="container-fluid containerplus">
+      <div class="row">
+        <div class= "col-xs-12 col-md-4">
+          <a href="home.html"><img src="Logo.png" class="logo"></a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-custom" data-spy="affix" data-offset-top="350">
+      <ul class ="nav navbar-nav">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="aboutUs.html">ABOUT US</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="donate.html">DONATION</a></li>
+        <li><a href="joinUs.html">VOLUNTEER</a></li>
+        <li class = "active"><a href="login.html">LOGIN</a></li>
+      </ul>
+    </nav>
+{{> Template.dynamic template=template_name }}
+    <div class="container-fluid">
+      <div class = "row">
+        <div class="col-xs-offset-2 col-xs-8 col-md-5 col-md-offset-3 login">
+          <h1 class = "loginText">LOGIN</h1>
+          <input type="text" name="username" class="form form-control input-lg"
+          placeholder="USERNAME" style = "margin-top:60px;">
+          <input type="password" name="password" class="form form-control input-lg"
+          placeholder="PASSWORD">
+
+          <a href="memberLogin.html"><button type="submit" class="loginBtn">LOGIN</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer">
+      <div class ="row">
+        <div class ="col-xs-12 col-md-3">
+          <ul class ="ul">
+            <li><img src="FooterLogo.png" class="footerLogo"></li>
+            <li class = "footerText">&copy; 2018 Jinjang Literacy Project</li>
+          </ul>
+        </div>
+
+        <div class ="col-xs-12 col-md-3 contact">
+          <ul class = "ul">
+            <br><li class = "footerText">Contact Us</li><br><br>
+            <li><span class="fa fa-phone"></span> +852 12345678</li>
+            <li><span class="fa fa-fax"></span> +852 87654321</li>
+            <li><span class="fa fa-envelope"></span><a href="#"> help@edu.my</a></li>
+
+            <br><li class = "footerText">Connect With Us</li>
+            <li>
+              <div class ="col-xs-1 col-md-1 icon" style="margin-top:33px;">
+              <div><a href=https://www.facebook.com/>
+                <img src = "facebook.png" height="35px" width="35px"></a></div>
+              </div>
+
+              <div class ="col-xs-1 col-md-1 icon" style="margin-top:35px">
+                <div><a href=https://www.twitter.com/>
+                <img src = "twitter.png" height="30px" width="30px"></a></div>
+              </div>
+
+              <div class ="col-xs-1 col-md-1 icon" style="margin-top:35px">
+                <div><a href=https://www.google.com/>
+                <img src = "google.png" height="30px" width="30px"></a></div>
+              </div>
+
+              <div class ="col-xs-1 col-md-1 icon" style="margin-top:33px">
+                <div><a href=https://www.instagram.com/>
+                <img src = "instagram.png" height="34px" width="34px"></a></div>
+              </div>
+
+              <div class ="col-xs-1 col-md-1 icon" style="margin-top:35px">
+                <div><a href=https://www.youtube.com/>
+                <img src = "youtube.png" height="30px" width="30px"></a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class ="col-xs-12 col-md-3">
+          <ul class = "ul">
+            <li class="footerText" style="margin-top:35px;">Sponsored By</li>
+            <li><img src = "HELPLogo.png" class = "HELPLogo"></li>
+          </ul>
+        </div>
+
+        <div class ="col-xs-12 col-md-3">
+          <ul class = "ul">
+            <li><img src = "AGNLogo.png" class = "AGNLogo"></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</template>
