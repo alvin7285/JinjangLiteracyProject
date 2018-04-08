@@ -1,41 +1,93 @@
 <template name="login">
-  <head>
-    <link rel="stylesheet" href="style.css">
 
-    <title>
-        Jinjang Literacy Project
-    </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-social.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/mystyle.css" rel="stylesheet">
-  </head>
+    {{#if currentUser}}
+    <body>
+    <nav class="navbar navbar-custom" data-spy="affix" data-offset-top="350">
+          <ul class ="nav navbar-nav">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="aboutUs.html">ABOUT US</a></li>
+            <li class = "active"><a href="#.html">EVENTS</a></li>
+            <li><a href="donate.html">DONATION</a></li>
+            <li><a href="setting.html">SETTINGS</a></li>
+            <li class = "logOut"><a href="home.html">LOG OUT</a></li>
+          </ul>
+        </nav>
+
+        <div class="container-fluid">
+          <div class="row" style = "margin-bottom:50px;margin-left:80px;">
+            <div class="col-xs-8 col-md-5">
+              <img src="mission.jpg" class="img-fluid" alt="Responsive image"
+              height="350px" width="100%">
+            </div>
+
+            <div class="col-xs-11 col-md-6">
+              <h1 class = "aboutUs">Event 1</h1>
+
+              <h4>Date: 14/3/2018<br><br>
+                  Time: 8am - 12pm<br><br>
+                  Text SampleText SampleText SampleText Sample
+                  Text SampleText SampleText SampleText SampleText Sample
+                  Text SampleText SampleText SampleText SampleText Sample
+              </h4><br>
+              <button class="loginBtn">Join Event</button>
+            </div>
+
+          </div>
+
+        <hr class = "line">
+          <div class="row" style = "margin-bottom:50px;margin-left:90px">
+
+            <div class="col-xs-8 col-md-5">
+              <img src="vision.jpg" class="img-fluid" alt="Responsive image"
+              height="350px" width="100%">
+            </div>
 
 
-  <body>
-    <!--Include JQuery: necessary for Bootstrap plugins-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--Include bootstrap library as needed-->
-    <script src="js/bootstrap.min.js"></script>
+            <div class="col-xs-11 col-md-6">
+              <h1 class = "aboutUs">Event 2</h1>
 
-    <div class="container-fluid containerplus">
-      <div class="row">
-        <div class= "col-xs-12 col-md-4">
-          <a href="home.html"><img src="Logo.png" class="logo"></a>
+              <h4>Date: 14/3/2018<br><br>
+                  Time: 8am - 12pm<br><br>
+                  Text SampleText SampleText SampleText Sample
+                  Text SampleText SampleText SampleText SampleText Sample
+                  Text SampleText SampleText SampleText SampleText Sample
+              </h4>
+              <button class="loginBtn">Join Event</button>
+            </div>
+          </div>
+
+
+        <hr class = "line">
+          <div class="row" style = "margin-bottom:50px;margin-left:80px;">
+            <div class="col-xs-8 col-md-5">
+              <img src="event.jpg" class="img-fluid" alt="Responsive image"
+              height="350px" width="100%">
+            </div>
+
+            <div class="col-xs-11 col-md-6">
+              <h1 class = "aboutUs">Event 3</h1>
+
+              <h4>Date: 14/3/2018<br><br>
+                  Time: 8am - 12pm<br><br>
+                  Text SampleText SampleText SampleText Sample
+                  Text SampleText SampleText SampleText SampleText Sample
+                  Text SampleText SampleText SampleText SampleText Sample
+              </h4>
+              <button class="loginBtn">Join Event</button>
+
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-
+      </body>
+    {{else}}
+    <body>
     <nav class="navbar navbar-custom" data-spy="affix" data-offset-top="350">
       <ul class ="nav navbar-nav">
         <li><a href="/home">HOME</a></li>
-        <li><a href="aboutUs.html">ABOUT US</a></li>
-        <li><a href="events.html">EVENTS</a></li>
-        <li><a href="donate.html">DONATION</a></li>
-        <li><a href="joinUs.html">VOLUNTEER</a></li>
+        <li><a href="/aboutUs">ABOUT US</a></li>
+        <li><a href="/events">EVENTS</a></li>
+        <li><a href="/donate">DONATION</a></li>
+        <li><a href="/volunteer">VOLUNTEER</a></li>
         <li class = "active"><a href="/login">LOGIN</a></li>
       </ul>
     </nav>
@@ -48,73 +100,13 @@
           placeholder="USERNAME" style = "margin-top:60px;">
           <input type="password" name="password" class="form form-control input-lg"
           placeholder="PASSWORD">
-
+          <p class="footerText">No Account? <a href="/volunteer">Create Account</a></p>
           <button type="submit" class="loginBtn">LOGIN</button>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid footer">
-      <div class ="row">
-        <div class ="col-xs-12 col-md-3">
-          <ul class ="ul">
-            <li><img src="FooterLogo.png" class="footerLogo"></li>
-            <li class = "footerText">&copy; 2018 Jinjang Literacy Project</li>
-          </ul>
-        </div>
 
-        <div class ="col-xs-12 col-md-3 contact">
-          <ul class = "ul">
-            <br><li class = "footerText">Contact Us</li><br><br>
-            <li><span class="fa fa-phone"></span> +852 12345678</li>
-            <li><span class="fa fa-fax"></span> +852 87654321</li>
-            <li><span class="fa fa-envelope"></span><a href="#"> help@edu.my</a></li>
-
-            <br><li class = "footerText">Connect With Us</li>
-            <li>
-              <div class ="col-xs-1 col-md-1 icon" style="margin-top:33px;">
-              <div><a href=https://www.facebook.com/>
-                <img src = "facebook.png" height="35px" width="35px"></a></div>
-              </div>
-
-              <div class ="col-xs-1 col-md-1 icon" style="margin-top:35px">
-                <div><a href=https://www.twitter.com/>
-                <img src = "twitter.png" height="30px" width="30px"></a></div>
-              </div>
-
-              <div class ="col-xs-1 col-md-1 icon" style="margin-top:35px">
-                <div><a href=https://www.google.com/>
-                <img src = "google.png" height="30px" width="30px"></a></div>
-              </div>
-
-              <div class ="col-xs-1 col-md-1 icon" style="margin-top:33px">
-                <div><a href=https://www.instagram.com/>
-                <img src = "instagram.png" height="34px" width="34px"></a></div>
-              </div>
-
-              <div class ="col-xs-1 col-md-1 icon" style="margin-top:35px">
-                <div><a href=https://www.youtube.com/>
-                <img src = "youtube.png" height="30px" width="30px"></a></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class ="col-xs-12 col-md-3">
-          <ul class = "ul">
-            <li class="footerText" style="margin-top:35px;">Sponsored By</li>
-            <li><img src = "HELPLogo.png" class = "HELPLogo"></li>
-          </ul>
-        </div>
-
-        <div class ="col-xs-12 col-md-3">
-          <ul class = "ul">
-            <li><img src = "AGNLogo.png" class = "AGNLogo"></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
+    {{/if}}
   </body>
 </template>

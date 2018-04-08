@@ -1,3 +1,82 @@
 <template name = "main_layout">
+  <head>
+    <link rel="stylesheet" href="style.css">
+
+    <title>
+        Jinjang Literacy Project
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet">
+  </head>
+
+
+
+    <!--Include JQuery: necessary for Bootstrap plugins-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Include bootstrap library as needed-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <div class="container-fluid containerplus">
+      <div class="row">
+        <div class= "col-xs-12 col-md-4">
+          <a href="home.html"><img src="Logo.png" class="logo"></a>
+        </div>
+      </div>
+    </div>
+
     {{> yield}}
+
+
+    <div class="container-fluid footer">
+      <div class ="row">
+        <div class ="col-xs-12 col-md-3">
+          <ul class ="ul">
+            <li><img src="FooterLogo.png" class="footerLogo"></li>
+            <li class = "footerText">&copy; 2018 Jinjang Literacy Project</li>
+          </ul>
+        </div>
+
+        <div class ="col-xs-12 col-md-3 contact">
+          <ul class = "ul">
+            <br><li class = "footerText">Contact Us</li><br>
+            <li><span class="fa fa-phone"></span> 016-3672568 (Mary Ramamoorthy)</li>
+            <li><span class="fa fa-envelope"></span>
+              <a href="#"> Maryjonathan.acts@gmail.com</a>
+            </li>
+
+            <br><li class = "footerText">Connect With Us</li><br>
+            <li>
+              <li><a href=https://www.facebook.com/Jinjang-Numeracy-Project-323424084690537/>
+                <span class="fa fa-facebook-square icon"></span></a>
+                  <a href=www.google.com/>
+                  <span class="fa fa-google-plus-square icon"></span></a></li>
+
+            </li>
+          </ul>
+        </div>
+
+        <div class ="col-xs-12 col-md-4">
+            <ul class = "ul">
+              <br><li class="footerText">Sponsored By</li>
+              <li>
+                <img src = "HELPLogo.png" class = "HELPLogo">
+                <img src = "AGNLogo.png" class = "AGNLogo">
+              </li>
+            </ul>
+        </div>
+
+        <div class ="col-xs-12 col-md-2">
+          <ul class="ul">
+            <br><li class = "footerText">Powered by</li>
+            <li><img src = "ICTLogo.jpg" class = "ICTLogo"></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
 </template>

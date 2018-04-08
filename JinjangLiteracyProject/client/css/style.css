@@ -11,31 +11,35 @@ img.logo{
 
 img.footerLogo{
   height: 200px;
-  margin-top: 20px;
 }
 
 img.HELPLogo{
   height: 100px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 img.AGNLogo{
   height: 100px;
-  margin-top: 80px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
-div.footer{
+.ICTLogo{
+  height: 80px;
+  margin-top: 14px;
+}
+
+.footer{
   background-color: #EAF9FB;
   width:100%;
   height: auto;
 }
 
-li.footerText{
+.footerText{
   font-family: 'RockWell';
   font-size: 18px;
   font-weight: bold;
   margin-top: 20px;
-  margin-bottom: -20px;
 }
 
 .line{
@@ -109,24 +113,13 @@ ul.ul{
   list-style:none;
 }
 
-div.topIcon{
-  padding: 0;
-  width:auto;
+.icon{
+  font-size: 30px;
+  margin-right: 5px;
 }
 
-div:hover.topIcon{
+.icon:hover{
   transition: .4s;
-  opacity: 0.3;
-}
-
-div.icon{
-  padding: 0;
-  width:auto;
-}
-
-div:hover.icon{
-  transition: .4s;
-  opacity: 0.7;
 }
 
 .homePic{
