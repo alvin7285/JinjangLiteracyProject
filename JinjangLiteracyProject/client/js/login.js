@@ -1,5 +1,10 @@
 Template.login.rendered = function(){
-
+  $("#login").addClass('active');
+  $("#home").removeClass('active');
+  $("#aboutUs").removeClass('active');
+  $("#events").removeClass('active');
+  $("#donate").removeClass('active');
+  $("#volunteer").removeClass('active');
 }
 
 Template.login.events({
@@ -14,8 +19,8 @@ Template.login.events({
           return false;
         }
         else{
-          Router.go("/events");
           Bert.alert("You are now logged  in", "success", "growl-top-right");
+          Router.go("/events");
         }
       });
     }

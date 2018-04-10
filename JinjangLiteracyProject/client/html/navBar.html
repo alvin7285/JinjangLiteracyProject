@@ -1,12 +1,18 @@
 <Template name = "navBar">
   {{#if currentUser}}
     <nav class="navbar navbar-custom" data-spy="affix" data-offset-top="350">
-      <ul class ="nav navbar-nav">
-        <li><a href="/home">HOME</a></li>
-        <li><a href="/aboutUs">ABOUT US</a></li>
-        <li><a href="/events">EVENTS</a></li>
-        <li><a href="/donate">DONATION</a></li>
-        <li><a href="/setting">SETTINGS</a></li>
+      <ul class ="nav navbar-nav {{select}}">
+        <li id="home"><a href="/home">HOME</a></li>
+        <li id="aboutUs"><a href="/aboutUs">ABOUT US</a></li>
+        <li class="dropdown" id="events">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">EVENTS</a>
+          <ul class="dropdown-menu">
+            <li><a href="/events">CREATE EVENTS</a></li>
+            <li><a href="#">VIEW EVENTS</a></li>
+          </ul>
+        </li>
+        <li id="donate"><a href="/donate">DONATION</a></li>
+        <li id="setting"><a href="/setting">SETTINGS</a></li>
         <li class = "logOut"><a href="#">LOG OUT</a></li>
       </ul>
     </nav>
@@ -14,13 +20,13 @@
   {{else}}
 
     <nav class="navbar navbar-custom" data-spy="affix" data-offset-top="350">
-      <ul class ="nav navbar-nav">
-        <li><a href="/home">HOME</a></li>
-        <li><a href="/aboutUs">ABOUT US</a></li>
-        <li><a href="/events">EVENTS</a></li>
-        <li><a href="/donate">DONATION</a></li>
-        <li><a href="/volunteer">VOLUNTEER</a></li>
-        <li><a href="/login">LOGIN</a></li>
+      <ul class ="nav navbar-nav {{select}}">
+        <li id="home"><a href="/home">HOME</a></li>
+        <li id="aboutUs"><a href="/aboutUs">ABOUT US</a></li>
+        <li id="events"><a href="/events">EVENTS</a></li>
+        <li id="donate"><a href="/donate">DONATION</a></li>
+        <li id="volunteer"><a href="/volunteer">VOLUNTEER</a></li>
+        <li id="login"><a href="/login">LOGIN</a></li>
       </ul>
     </nav>
   {{/if}}

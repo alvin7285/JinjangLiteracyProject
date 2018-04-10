@@ -1,5 +1,10 @@
 Template.volunteer.rendered = function(){
-
+  $("#volunteer").addClass('active');
+  $("#home").removeClass('active');
+  $("#aboutUs").removeClass('active');
+  $("#events").removeClass('active');
+  $("#donate").removeClass('active');
+  $("#login").removeClass('active');
 }
 
 Template.volunteer.events({
@@ -22,8 +27,8 @@ Template.volunteer.events({
               Bert.alert(error.reason, "danger", "growl-top-right");
             }
             else{
-              Bert.alert("Account Created!","success", "growl-top-right");
-              Router.go("/login");
+              Bert.alert("Account Created! Welcome!","success", "growl-top-right");
+              Router.go("/events");
             }
           });
         }
@@ -43,14 +48,6 @@ var notEmpty = function(value){
   Bert.alert("Please fill in all fields", "danger", "growl-top-right");
   return false;
 };
-
-// isName = function(value){
-//   var filter = /^([a-zA-Z])/;
-//   if(filter.test(value)){
-//     return true;
-//   }
-//   Bert.alert("Please enter only alphabet", "danger", "growl-top-right");
-// }
 
 isEmail = function(value) {
   var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;

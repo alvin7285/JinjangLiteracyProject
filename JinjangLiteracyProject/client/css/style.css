@@ -25,8 +25,9 @@ img.AGNLogo{
 }
 
 .ICTLogo{
-  height: 80px;
+  height: 70px;
   margin-top: 14px;
+  width: auto;
 }
 
 .footer{
@@ -62,8 +63,13 @@ img.AGNLogo{
 }
 
 .register > form > input{
-  margin-top: 35px;
   width: 100%;
+  height: 50px;
+}
+
+.register > form > h4{
+  margin-top: 45px;
+  font-weight: bold;
 }
 
 .login{
@@ -79,15 +85,19 @@ img.AGNLogo{
   height: 60px;
   border-radius: 10px;
   padding: 10px;
-  width: 507px;
-  margin-bottom: -30px;
-  margin-left: -10px;
   color: #00383e;
+  text-align:center;
 }
 
 .loginForm > input{
+  width: 100%;
+  height: 50px;
+}
+
+.loginForm > h4{
   margin-top: 35px;
   width: 100%;
+  font-weight: bold;
 }
 
 .loginBtn{
@@ -218,7 +228,7 @@ ul.ul{
 .navbar-custom{
   margin-top: 5px;
   background-color: white;
-  /* z-index:1; */
+  z-index:1;
   width:auto;
 }
 
