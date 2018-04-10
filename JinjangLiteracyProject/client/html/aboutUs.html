@@ -1,4 +1,79 @@
 <template name ="aboutUs">
+  {{#if currentUser}}
+  <body>
+    <nav class="navbar navbar-custom" data-spy="affix" data-offset-top="350">
+      <ul class ="nav navbar-nav">
+        <li><a href="/home">HOME</a></li>
+        <li class = "active"><a href="/aboutUs">ABOUT US</a></li>
+        <li><a href="/events">EVENTS</a></li>
+        <li><a href="/donate">DONATION</a></li>
+        <li><a href="/setting">SETTINGS</a></li>
+        <li class = "logOut"><a href="#">LOG OUT</a></li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row" style = "margin-bottom:50px;margin-left:80px;">
+        <div class="col-xs-8 col-md-5">
+          <img src="mission.jpg" class="img-fluid" alt="Responsive image" height="350px" width="100%">
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+          <h1 class = "aboutUs">Our Mission</h1>
+
+          <h4 class="aboutUsContent">We empower the children of Jinjang
+            community to be self-reliant through education by equiping them
+             with skills and knowledge in preparation for gainful future
+             employment and provide them with materials to support and
+             help them go back to school or remain
+             in school</h4>
+        </div>
+
+      </div>
+
+    <hr class = "line">
+      <div class="row" style = "margin-bottom:50px;margin-left:80px">
+        <div class="col-xs-11 col-md-5">
+          <h1 class = "aboutUs">Our Vision</h1>
+
+          <h4 class="aboutUsContent">To help the underprivileged children of
+            Jinjang community break the cycle of poverty through education</h4>
+        </div>
+
+        <div class="col-xs-8 col-md-5">
+          <img src="vision.jpg" class="img-fluid" alt="Responsive image"
+          height="350px" width="100%">
+        </div>
+      </div>
+
+    <hr class = "line">
+      <div class="row" style = "margin-bottom:50px;margin-left:80px;">
+        <div class="col-xs-7 col-md-5">
+          <img src="HELPLogo.png" class="img-fluid" alt="Responsive image"
+           height="200px" width="100%" style="margin-bottom:40px;">
+          <img src="AGNLogo.png" class="img-fluid" alt="Responsive image"
+          height="230px" width="100%">
+        </div>
+
+        <div class="col-xs-11 col-md-6">
+          <h1 class = "aboutUs">Our Sponsors</h1>
+
+          <h3 class = "aboutUs">HELP University</h3>
+          <h4>Text SampleText SampleText SampleText Sample
+          Text SampleText SampleText SampleText SampleText Sample
+          Text SampleText SampleText SampleText SampleText Sample</h4>
+
+          <h3 class = "aboutUs" style="margin-top:50px;">AGN</h3>
+          <h4>Text SampleText SampleText SampleText Sample
+          Text SampleText SampleText SampleText SampleText Sample
+          Text SampleText SampleText SampleText SampleText Sample</h4>
+
+        </div>
+      </div>
+    </div>
+
+    </body>
+  {{else}}
   <body>
 
     <nav class="navbar navbar-custom" data-spy="affix" data-offset-top="350">
@@ -73,4 +148,5 @@
     </div>
 
   </body>
+  {{/if}}
 </template>

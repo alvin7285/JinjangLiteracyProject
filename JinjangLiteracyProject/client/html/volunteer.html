@@ -1,38 +1,5 @@
 <template name="volunteer">
-    {{#if currentUser}}
-    <body>
 
-      <nav class="navbar navbar-custom" data-spy="affix" data-offset-top="350">
-        <ul class ="nav navbar-nav">
-          <li><a href="/home">HOME</a></li>
-          <li><a href="/aboutUs">ABOUT US</a></li>
-          <li><a href="/events">EVENTS</a></li>
-          <li><a href="/donate">DONATION</a></li>
-          <li class = "active"><a href="/setting">VOLUNTEER</a></li>
-          <li><a href="/login">LOGIN</a></li>
-        </ul>
-      </nav>
-
-      <div class="container-fluid">
-        <div class = "row">
-          <div class="col-xs-12 col-md-5 col-md-offset-3 register">
-            <h1 class = "loginText">PROFILES</h1>
-            <input type="text" name="username" class="form form-control input-lg"
-            placeholder="USERNAME" style = "margin-top:60px;">
-            <input type="text" name="name" class="form form-control input-lg"
-            placeholder="NAME">
-            <input type="email" name="email" class="form form-control input-lg"
-            placeholder="EMAIL">
-            <input type="password" name="password" class="form form-control input-lg"
-            placeholder="PASSWORD">
-
-            <a href = "login.html"><button type="submit" class="loginBtn">UPDATE</button></a>
-          </div>
-        </div>
-      </div>
-
-    </body>
-    {{else}}
     <body>
     <nav class="navbar navbar-custom" data-spy="affix" data-offset-top="350">
       <ul class ="nav navbar-nav">
@@ -79,6 +46,6 @@
     </div>
 
   </body>
-  {{/if}}
+
 
 </template>

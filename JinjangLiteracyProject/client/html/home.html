@@ -1,4 +1,76 @@
 <template name="home">
+  {{#if currentUser}}
+  <body>
+
+    <nav class="navbar navbar-custom" data-spy="affix" data-offset-top="350">
+      <ul class ="nav navbar-nav">
+        <li class = "active"><a href="/home">HOME</a></li>
+        <li><a href="/aboutUs">ABOUT US</a></li>
+        <li><a href="/events">EVENTS</a></li>
+        <li><a href="/donate">DONATION</a></li>
+        <li><a href="/setting">SETTINGS</a></li>
+        <li class = "logOut"><a href="#">LOG OUT</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="container-fluid">
+      <div class ="row">
+        <div class = "col-xs-12 col-md-12">
+          <h3 class = "title">Impact a Life, Transform a Community</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class ="row">
+        <div class = "col-xs-12 col-md-6 col-md-offset-3">
+          <img src="Home.jpg" class ="homePic">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid homeBar">
+      <div class ="row">
+        <div class = "col-md-4 col-md-offset-1">
+          <h3 class = "homeBarfont">NO CHILD SEEKING AN EDUCATION SHOULD BE TURNED AWAY</h3>
+          <h3 class = "homeBarfont">EDUCATION IS THE FOUNDATION FOR A BETTER FUTURE FOR THE URBAN POOR</h3>
+        </div>
+
+        <div class = "col-xs-4 col-xs-offset-2 col-md-3 col-md-offset-1">
+          <a href = "JoinUs.html"><button class="homeBarBtn">VOLUNTEER</button></a>
+        </div>
+
+        <div class = "col-xs-6 col-md-3">
+          <a href = "donate.html"><button class="homeBarBtn">DONATION</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid homeBar2">
+      <div class ="row">
+        <div class = "col-xs-12 col-md-5 col-md-offset-1">
+          <h3 class="aboutJinjangTitle">The Children in Jinjang</h3>
+          <h5 class = "aboutJinjang">The children in Jinjang Utara have been
+            growing up in a poverty stricken environment. Some were abandoned by
+            their parents or are neglected in an environment of abject poverty.
+            Violence is rampant in this place. Teenagers are at risk of being
+            recruited by gangs. With their home so broken and crowded,
+            the teenagers have no place to turn to. The gangs offered financial
+            and communal support/relief, including a sense of belonging.</h5>
+
+          <a href="/jinjangStory"><button class ="readMoreBtn">Read More</button></a>
+        </div>
+
+        <div class = "col-xs-8 col-md-5 col-md-offset-1">
+          <img src="event.jpg" class="img-fluid" alt="Responsive image" height="400px" width="100%">
+        </div>
+
+    </div>
+  </div>
+
+  </body>
+  {{else}}
   <body>
 
     <nav class="navbar navbar-custom" data-spy="affix" data-offset-top="350">
@@ -69,6 +141,6 @@
   </div>
 
   </body>
-
+{{/if}}
 
 </template>

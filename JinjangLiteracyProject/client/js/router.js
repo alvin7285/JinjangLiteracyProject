@@ -37,4 +37,9 @@ Router.map(function(){
     path: '/login',
     template:'login'
   });
+
+  this.route('setting', {
+    path: '/setting',
+    template:'setting'
+  });
 });

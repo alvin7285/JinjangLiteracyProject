@@ -1,4 +1,39 @@
 <template name="donate">
+  {{#if currentUser}}
+  <body>
+
+    <nav class="navbar navbar-custom" data-spy="affix" data-offset-top="350">
+      <ul class ="nav navbar-nav">
+        <li><a href="/home">HOME</a></li>
+        <li><a href="/aboutUs">ABOUT US</a></li>
+        <li><a href="/events">EVENTS</a></li>
+        <li class = "active"><a href="/donate">DONATION</a></li>
+        <li><a href="/setting">SETTINGS</a></li>
+        <li class = "logOut"><a href="#">LOG OUT</a></li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class = "row">
+        <div class="col-xs-offset-2 col-xs-8 col-md-5 col-md-offset-3 register">
+          <form class="donationForm">
+            <h1 class = "loginText">DONATION</h1>
+            <input type="text" name="name" class="form form-control input-lg"
+            placeholder="NAME" style = "margin-top:60px;">
+            <input type="number" name="amount" class="form form-control input-lg"
+            placeholder="AMOUNT">
+            <input type="email" name="email" class="form form-control input-lg"
+            placeholder="EMAIL">
+            <input type="phone" name="contact" class="form form-control input-lg"
+            placeholder="CONTACT">
+            <button type="submit" class="loginBtn">DONATE</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  {{else}}
   <body>
 
     <nav class="navbar navbar-custom" data-spy="affix" data-offset-top="350">
@@ -15,22 +50,23 @@
     <div class="container-fluid">
       <div class = "row">
         <div class="col-xs-offset-2 col-xs-8 col-md-5 col-md-offset-3 register">
-          <h1 class = "loginText">DONATION</h1>
-          <input type="text" name="name" class="form form-control input-lg"
-          placeholder="NAME" style = "margin-top:60px;">
-          <input type="number" name="amount" class="form form-control input-lg"
-          placeholder="AMOUNT">
-          <input type="email" name="email" class="form form-control input-lg"
-          placeholder="EMAIL">
-          <input type="phone" name="contact" class="form form-control input-lg"
-          placeholder="CONTACT">
-
-          <button type="submit" class="loginBtn">DONATION</button>
+          <form class="donationForm">
+            <h1 class = "loginText">DONATION</h1>
+            <input type="text" name="name" class="form form-control input-lg"
+            placeholder="NAME" style = "margin-top:60px;">
+            <input type="number" name="amount" class="form form-control input-lg"
+            placeholder="AMOUNT">
+            <input type="email" name="email" class="form form-control input-lg"
+            placeholder="EMAIL">
+            <input type="phone" name="contact" class="form form-control input-lg"
+            placeholder="CONTACT">
+            <button type="submit" class="loginBtn">DONATE</button>
+          </form>
         </div>
       </div>
     </div>
 
   </body>
-
+{{/if}}
 
 </template>

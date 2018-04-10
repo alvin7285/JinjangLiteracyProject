@@ -61,7 +61,7 @@ img.AGNLogo{
   border-radius: 10px;
 }
 
-.volunteerForm > input{
+.register > form > input{
   margin-top: 35px;
   width: 100%;
 }
@@ -85,7 +85,7 @@ img.AGNLogo{
   color: #00383e;
 }
 
-.login > input{
+.loginForm > input{
   margin-top: 35px;
   width: 100%;
 }
