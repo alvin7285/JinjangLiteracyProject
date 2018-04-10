@@ -218,20 +218,21 @@ ul.ul{
 .navbar-custom{
   margin-top: 5px;
   background-color: white;
-  z-index:1;
+  /* z-index:1; */
   width:auto;
 }
 
 .contact{
   margin-right: -80px;
 }
+
 .affix {
   top: -10px;
   width: 100%;
 }
 
 .affix + .container-fluid {
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 ul.navbar-nav{
