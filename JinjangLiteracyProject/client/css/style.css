@@ -245,7 +245,7 @@ ul.ul{
     padding-top: 50px;
 }
 
-ul.navbar-nav{
+.navbar-nav{
   font-family: 'Proxima Nova Soft','Helvetica Neue',sans-serif;
   font-weight: bolder;
   font-size: 18px;
@@ -266,7 +266,7 @@ ul.navbar-nav{
   border-color: black;
 }
 
-ul.navbar-nav >li> a{
+.navbar-nav >li> a{
   letter-spacing: 1px;
   border-style:solid;
   border-width: 2px;
@@ -289,7 +289,7 @@ ul.navbar-nav >li> a{
   border-color: white;
 }
 
-ul.navbar-nav> li > a:hover{
+.navbar-nav> li > a:hover{
   border-style:solid;
   border-width: 2px;
   border-color: black;

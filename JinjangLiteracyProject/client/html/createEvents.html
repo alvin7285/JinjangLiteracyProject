@@ -1,0 +1,29 @@
+<template name="createEvents">
+  {{#if currentUser}}
+  <body>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-5 col-md-offset-3 register">
+            <form class="eventForm">
+              <h1 class = "loginText">CREATE AN EVENT</h1>
+              <h4>Title of Event</h4>
+              <input type="text" name="title" class="form form-control input-lg"
+              placeholder="TITLE OF EVENT">
+              <h4>Date</h4>
+              <input type="date" name="date" class="form form-control input-lg"
+              placeholder="DATE">
+              <h4>Time</h4>
+              <input type="time" name="time" class="form form-control input-lg"
+              placeholder="TIME">
+              <h4>Description</h4>
+              <textarea name="description" rows="10" cols="30" class="form form-control input-lg"
+              placeholder="DESCRIPTION"></textarea>
+              <button type="submit" class="loginBtn">CREATE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </body>
+  {{/if}}
+
+</template>

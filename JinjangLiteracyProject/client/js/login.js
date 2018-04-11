@@ -20,7 +20,7 @@ Template.login.events({
         }
         else{
           Bert.alert("You are now logged  in", "success", "growl-top-right");
-          Router.go("/events");
+          Router.go("/viewEvents");
         }
       });
     }

@@ -13,9 +13,14 @@ Router.map(function(){
     template:'aboutUs'
   });
 
-  this.route('events', {
-    path: '/events',
-    template:'events'
+  this.route('createEvents', {
+    path: '/createEvents',
+    template:'createEvents'
+  });
+
+  this.route('viewEvents', {
+    path: '/viewEvents',
+    template:'viewEvents'
   });
 
   this.route('donate', {
