@@ -13,6 +13,11 @@ Router.map(function(){
     template:'aboutUs'
   });
 
+  this.route('events', {
+    path: '/events',
+    template:'events'
+  });
+
   this.route('createEvents', {
     path: '/createEvents',
     template:'createEvents'

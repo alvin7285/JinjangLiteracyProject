@@ -22,5 +22,9 @@ if (Meteor.isServer) {
 				});
 			}
 		},
+
+		removeEvent: function(eventId){
+			Events.remove(eventId);
+		}
 	});
 }
