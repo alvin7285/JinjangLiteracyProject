@@ -24,6 +24,7 @@ Template.createEvents.events({
       event.target.description.value = "";
 
       Bert.alert("Event successfully created", "success", "growl-top-right");
+      Router.go("/viewEvents");
     }
     else{
       Bert.alert("something went wrong", "danger", "growl-top-right");
