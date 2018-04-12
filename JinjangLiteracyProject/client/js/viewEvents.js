@@ -15,13 +15,6 @@ Template.viewEvents.helpers({
 	}
 });
 
-Template.events.helpers({
-  events: function() {
-  	var events = Events.find({}, {sort: {createdAt: -1}});
-		return events;
-	}
-});
-
 Template.viewEvents.events({
   "click #deleteEvent": function(){
     if (confirm("Confirm to delete this event?") == true){

@@ -28,7 +28,7 @@ Template.volunteer.events({
             }
             else{
               Bert.alert("Account Created! Welcome!","success", "growl-top-right");
-              Router.go("/login");
+              Router.go("/events");
             }
           });
         }

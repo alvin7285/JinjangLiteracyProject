@@ -20,12 +20,21 @@ if (Meteor.isServer) {
 					dateCreated: dateCreated,
           createdAt: new Date(),
           volunteers:0,
+					userJoined:[],
 				});
 			}
 		},
 
 		removeEvent: function(eventId){
 			Events.remove(eventId);
-		}
+		},
+
+		countUser: function(thisEvent, username) {
+			Events.update(thisEvent, { $addToSet: { userJoined: username}});
+			Events.update(thisEvent, { $inc: {volunteers: +1}});
+
+		},
+
+
 	});
 }
