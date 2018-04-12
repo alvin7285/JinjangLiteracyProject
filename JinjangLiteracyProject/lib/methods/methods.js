@@ -1,6 +1,6 @@
 if (Meteor.isServer) {
 	Meteor.methods({
-		addEvent: function(title, date, time, description) {
+		addEvent: function(title, date, timeFrom, timeTo, description) {
 			if(!Meteor.userId()) {
 				return false;
 			}
@@ -14,7 +14,8 @@ if (Meteor.isServer) {
 				Events.insert({
 					title: title,
 					date: date,
-					time: time,
+					timeFrom: timeFrom,
+					timeTo: timeTo,
 					description: description,
 					dateCreated: dateCreated,
           createdAt: new Date(),

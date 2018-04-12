@@ -11,23 +11,25 @@ Template.createEvents.rendered = function(){
 Template.createEvents.events({
   "submit .eventForm" : function(){
     var title = event.target.title.value;
-    var date = toString(event.target.date.value);
-    var time = toString(event.target.time.value);
+    var date = (event.target.date.value).toString();
+    var timeFrom = (event.target.timeFrom.value).toString();
+    var timeTo = (event.target.timeTo.value).toString();
     var description = event.target.description.value;
 
     if(notEmpty(title) && notEmpty(description)){
-      Meteor.call('addEvent',title,date,time,description);
+      Meteor.call('addEvent',title,date,timeFrom,timeTo,description);
 
       event.target.title.value = "";
       event.target.date.value = "";
-      event.target.time.value = "";
+      event.target.timeFrom.value = "";
+      event.target.timeTo.value = "";
       event.target.description.value = "";
 
       Bert.alert("Event successfully created", "success", "growl-top-right");
       Router.go("/viewEvents");
     }
     else{
-      Bert.alert("something went wrong", "danger", "growl-top-right");
+      Bert.alert("Please enter all field", "danger", "growl-top-right");
     }
 
     return false;
