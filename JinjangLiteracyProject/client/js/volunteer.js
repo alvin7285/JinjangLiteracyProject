@@ -59,7 +59,7 @@ isEmail = function(value) {
 
 isValidPassword = function(password){
   if(password.length < 6){
-    Bert.alert("Password must be a least 6 characters", "danger", "growl-top-right");
+    Bert.alert("Password must be at least 6 characters", "danger", "growl-top-right");
     return false;
   }
   return true;
