@@ -33,7 +33,5 @@ if (Meteor.isServer) {
 			Events.update(thisEvent, { $addToSet: { userJoined: username}});
 			Events.update(thisEvent, { $inc: {volunteers: +1}});
 		},
-
-
 	});
 }

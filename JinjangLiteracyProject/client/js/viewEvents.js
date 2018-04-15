@@ -21,7 +21,6 @@ Template.viewEvents.events({
       Meteor.call("removeEvent", this._id);
       Bert.alert("The Event has been deleted", "success", "growl-top-right");
     }
-  },
-
+  }
 
 });
