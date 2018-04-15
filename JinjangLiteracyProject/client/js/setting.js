@@ -19,8 +19,4 @@ Template.setting.helpers({
   name: function(){
     return Meteor.user().name;
   },
-
-  password: function(){
-    return Meteor.user().password;
-  },
 });

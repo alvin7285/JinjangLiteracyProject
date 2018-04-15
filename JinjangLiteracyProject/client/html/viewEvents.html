@@ -17,10 +17,12 @@
                 Number of Volunteer: {{volunteers}}<br><br>
                 Volunteer That Joined: {{userJoined}}
             </h4>
+            <button class="btn btn-success" id="editEvent">Edit</button>
             <button class="btn btn-danger" id="deleteEvent">Delete Event</button>
           </div>
         </div>
       <hr class = "line">
+        {{> editEventModal}}
       </div>
     </body>
   {{else}}

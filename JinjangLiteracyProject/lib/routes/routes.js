@@ -52,4 +52,9 @@ Router.map(function(){
     path: '/setting',
     template:'setting'
   });
+
+  this.route('children', {
+    path: '/children',
+    template:'children'
+  });
 });

@@ -84,9 +84,8 @@ img.AGNLogo{
   font-weight: bold;
   height: 60px;
   border-radius: 10px;
-  padding: 10px;
+  padding:10px;
   color: #00383e;
-  text-align:center;
 }
 
 .loginForm > input{
