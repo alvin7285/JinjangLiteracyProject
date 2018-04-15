@@ -23,8 +23,5 @@ Template.viewEvents.events({
     }
   },
 
-    'click #editEvent': function(){
-      Session.set('showModal', true);
-    }
 
 });
