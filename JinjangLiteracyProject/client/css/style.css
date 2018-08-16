@@ -251,7 +251,7 @@ ul.ul{
   cursor: pointer;
   margin-right: 30px;
   float: right;
-  padding:5px;
+  padding:10px;
 }
 
 .navbar-custom .navbar-nav >.logOut > a{

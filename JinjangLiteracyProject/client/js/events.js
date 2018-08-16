@@ -32,5 +32,9 @@ Template.events.events({
     			Bert.alert("You have joined current event", "success", "growl-top-right");
 
     		}
-    	}
+    	},
+
+      "click #registerToJoin":function() {
+          Bert.alert("Please login to join event", "danger", "growl-top-right");
+      }
 });
