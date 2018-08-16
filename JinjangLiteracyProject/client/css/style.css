@@ -73,7 +73,6 @@ img.AGNLogo{
 }
 
 .login{
-  height: auto;
   margin: 20px;
   background-color: #EAF9FB;
   border-radius: 10px;
@@ -86,6 +85,7 @@ img.AGNLogo{
   border-radius: 10px;
   padding:10px;
   color: #00383e;
+  text-align: center;
 }
 
 .loginForm > input{
@@ -93,7 +93,7 @@ img.AGNLogo{
   height: 50px;
 }
 
-.loginForm > h4{
+.loginForm > h5{
   margin-top: 35px;
   width: 100%;
   font-weight: bold;
@@ -101,7 +101,6 @@ img.AGNLogo{
 
 .loginBtn{
   margin-top: 50px;
-  margin-left: 130px;
   background-color: #FBA16C;
   height: 60px;
   width: 200px;
@@ -116,6 +115,7 @@ img.AGNLogo{
 {
   text-align: justify;
   line-height: 2;
+  color:grey;
 }
 
 ul.ul{
@@ -129,10 +129,6 @@ ul.ul{
 
 .icon:hover{
   transition: .4s;
-}
-
-.homePic{
-  height: 400px;
 }
 
 .title{

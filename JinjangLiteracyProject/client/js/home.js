@@ -6,6 +6,7 @@ Template.home.rendered = function(){
   $("#volunteer").removeClass('active');
   $("#login").removeClass('active');
   $("#setting").removeClass('active');
+  this.home.reload();
 }
 
 Template.navBar.helpers({
