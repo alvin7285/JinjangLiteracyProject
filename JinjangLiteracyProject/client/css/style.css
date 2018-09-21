@@ -291,3 +291,22 @@ ul.ul{
   transition: .5s;
   background-color: white;
 }
+
+.modal-dialog{
+  height: 50%;
+  width: 80%;
+  margin:auto;
+}
+
+.modal-content{
+  height: 50%;
+  width: 80%;
+  margin:auto;
+}
+
+#eventsModal{
+  position: absolute;
+  height: 50%;
+  width: 80%;
+  margin:auto;
+}
