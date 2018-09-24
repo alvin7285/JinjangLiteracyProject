@@ -30,3 +30,4 @@ bootstrap
 momentjs:moment
 peppelg:bootstrap-3-modal
 underscore@1.0.10
+jquery

@@ -24,30 +24,40 @@
       <hr class = "line">
       </div>
     </body>
-  {{else}}
-    <h1>No upcoming events</h1>
-  {{/each}}
-</Template>
 
-<Template name="eventsModalTemplate">
     <div class="modal fade" id=eventsModal>
         <div class="modal-dialog modal-md">
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <h4 class="modal-title">Enter new Info</h4>
+                    <h4 class="modal-title">Enter New Event Info</h4>
                 </div>
 
-                <div class="modal-body">
-                    <p>A modal example.</p>
+                <div class="modal-body register">
+                  <form class="neweventForm">
+                    <h4>Title of Event</h4>
+                    <input type="text" id="newTitle" class="form form-control input-lg">
+                    <h4>Date</h4>
+                    <input type="date" id="newDate" class="form form-control input-lg">
+                    <h4>Start Time</h4>
+                    <input type="time" id="newTimeFrom" class="form form-control input-lg">
+                    <h4>End Time</h4>
+                    <input type="time" id="newTimeTo" class="form form-control input-lg">
+                    <h4>Description</h4>
+                    <textarea id="newDescription" rows="10" cols="30" class="form form-control input-lg">
+                    </textarea>
+                  </form>
                 </div>
 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" id="save">Save</button>
+                  <button type="submit" class="btn btn-primary" id="save">Save</button>
                   <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                 </div>
 
             </div>
         </div>
     </div>
+  {{else}}
+    <h1>No upcoming events</h1>
+  {{/each}}
 </Template>

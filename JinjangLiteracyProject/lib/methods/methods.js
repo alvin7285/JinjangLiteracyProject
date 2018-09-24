@@ -9,7 +9,10 @@ if (Meteor.isServer) {
 				var year = new Date().getFullYear();
 				var month = new Date().getMonth() + 1;
 				var day = new Date().getDate();
-				var dateCreated = (month + "/" + day + "/" + year).toString();
+				var dateCreated = (day + "/" + month + "/" + year).toString();
+				var date = moment(date).format('DD-MM-YYYY');
+				var timeFrom = moment(timeFrom,'HH:mm').format('h:mm A');
+				var timeTo = moment(timeTo,'HH:mm').format('h:mm A');
 
 				Events.insert({
 					title: title,

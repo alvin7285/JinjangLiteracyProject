@@ -23,7 +23,23 @@ Template.viewEvents.events({
     }
   },
 
-  "click #editEvent": function(){
-    Modal.show('eventsModalTemplate');
-    }
+  "click #editEvent": function(e){
+    e.preventDefault();
+    $('#eventsModal').modal('show');
+    var eventId = this._id;
+    var selectedEvent = Events.findOne(eventId);
+
+    var title = selectedEvent.title;
+    var date = moment(selectedEvent.date,'DD-MM-YYYY').format('YYYY-MM-DD');
+    var timeFrom = moment(selectedEvent.timeFrom,'h:mm A').format('HH:mm');
+    var timeTo = moment(selectedEvent.timeTo,'h:mm A').format('HH:mm');
+    var description = selectedEvent.description;
+
+    document.getElementById("newTitle").value = title;
+    document.getElementById("newDate").value = date;
+    document.getElementById("newTimeFrom").value = timeFrom;
+    document.getElementById("newTimeTo").value = timeTo;
+    document.getElementById("newDescription").value = description;
+
+  }
 });

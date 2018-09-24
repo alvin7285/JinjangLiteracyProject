@@ -293,20 +293,22 @@ ul.ul{
 }
 
 .modal-dialog{
-  height: 50%;
+  height: 80%;
   width: 80%;
   margin:auto;
 }
 
 .modal-content{
-  height: 50%;
+  height: 100%;
   width: 80%;
   margin:auto;
 }
 
 #eventsModal{
-  position: absolute;
-  height: 50%;
+  position:sticky;
+  height: 80%;
   width: 80%;
   margin:auto;
+  background-color: transparent;
+  border:none;
 }
