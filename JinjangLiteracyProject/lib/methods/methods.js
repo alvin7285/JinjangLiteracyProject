@@ -1,6 +1,6 @@
 if (Meteor.isServer) {
 	Meteor.methods({
-		addEvent: function(title, date, timeFrom, timeTo, description) {
+		addEvent: function(eventPicture, title, date, timeFrom, timeTo, description) {
 			if(!Meteor.userId()) {
 				return false;
 			}
@@ -15,6 +15,7 @@ if (Meteor.isServer) {
 				var timeTo = moment(timeTo,'HH:mm').format('h:mm A');
 
 				Events.insert({
+					eventPicture: eventPicture,
 					title: title,
 					date: date,
 					timeFrom: timeFrom,

@@ -26,7 +26,7 @@ Template.viewEvents.events({
   "click #editEvent": function(e){
     e.preventDefault();
     $('#eventsModal').modal('show');
-    var eventId = this._id;
+    eventId = this._id;
     var selectedEvent = Events.findOne(eventId);
 
     var title = selectedEvent.title;
@@ -41,5 +41,27 @@ Template.viewEvents.events({
     document.getElementById("newTimeTo").value = timeTo;
     document.getElementById("newDescription").value = description;
 
-  }
+  },
+
+  "click #saveNewEvent": function(){
+    $('#eventsModal').modal('hide');
+    var selectedEvent = Events.findOne(eventId);
+    var newTitle = document.getElementById("newTitle").value
+    var newDate = moment(document.getElementById("newDate").value,'YYYY-MM-DD').format('DD-MM-YYYY');
+    var newTimeFrom = moment(document.getElementById("newTimeFrom").value,'HH:mm').format('h:mm A');
+    var newTimeTo = moment(document.getElementById("newTimeTo").value,'HH:mm').format('h:mm A');
+    var newDescription = document.getElementById("newDescription").value;
+
+    Bert.alert("Event successfully edited", "success", "growl-top-right");
+    Events.update({_id: selectedEvent._id}, {
+          $set: {
+            title: newTitle,
+            date: newDate,
+            timeFrom: newTimeFrom,
+            timeTo: newTimeTo,
+            description: newDescription
+          }
+        });
+      }
+
 });
