@@ -9,6 +9,7 @@
     "bcrypt": "^1.0.3",
     "meteor-node-stubs": "^0.3.2",
     "npm": "^6.4.1",
+    "tableexport": "^5.0.2",
     "xlsx": "^0.14.0"
   }
 }

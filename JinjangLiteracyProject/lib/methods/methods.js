@@ -33,6 +33,10 @@ if (Meteor.isServer) {
 			Events.remove(eventId);
 		},
 
+		removeChildren: function(eventId){
+			return Children.remove({});
+		},
+
 		countUser: function(thisEvent, username) {
 			Events.update(thisEvent, { $addToSet: { userJoined: username}});
 			Events.update(thisEvent, { $inc: {volunteers: +1}});

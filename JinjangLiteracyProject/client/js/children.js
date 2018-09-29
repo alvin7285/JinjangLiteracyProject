@@ -1,12 +1,30 @@
+Template.children.helpers({
+  children: function() {
+  	var children = Children.find({}, {sort: {createdAt: -1}});
+		return children;
+	}
+});
+
 Template.children.events({
   "click #uploadButton": function() {
-      Bert.alert("File has been uploaded", "success", "growl-top-right");
       var uploadedFile = document.getElementById('uploadFile').files[0];
-      readFile(uploadedFile, function(content) {
-        Meteor.call('upload',content);
-       });
-     },
+      if (uploadFile.value !=""){
+        readFile(uploadedFile, function(content) {
+          Bert.alert("File has been uploaded", "success", "growl-top-right");
+          Meteor.call('upload',content);
+         });
+      }
+      else{
+        Bert.alert("Please insert a file", "danger", "growl-top-right");
+      }
 
+     },
+  "click #removeChildren": function(){
+    if (confirm("Confirm to delete this event?") == true){
+      Meteor.call('removeChildren');
+      Bert.alert("All children info have been removed", "success", "growl-top-right");
+    }
+  },
 
 });
 
