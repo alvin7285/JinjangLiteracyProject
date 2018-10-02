@@ -1,3 +1,14 @@
+Template.children.rendered = function(){
+  $("#events").removeClass('active');
+  $("#home").removeClass('active');
+  $("#aboutUs").removeClass('active');
+  $("#donate").removeClass('active');
+  $("#volunteer").removeClass('active');
+  $("#login").removeClass('active');
+  $("#setting").removeClass('active');
+  $("#children").addClass('active');
+}
+
 Template.children.helpers({
   children: function() {
   	var children = Children.find({}, {sort: {createdAt: -1}});
