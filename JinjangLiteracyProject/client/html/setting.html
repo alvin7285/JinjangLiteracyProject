@@ -8,7 +8,7 @@
             <h4>Username: {{username}}</h4>
             <h4>Name: {{name}}</h4>
             <h4>Email: {{email}}</h4>
-            <button class="loginBtn">UPDATE</button>
+            <button id="updateBtn" class="loginBtn">UPDATE</button>
           </form>
         </div>
       </div>
@@ -16,5 +16,31 @@
 
   </body>
 
+  <div class="modal fade" id=settingModal>
+      <div class="modal-dialog modal-md">
+          <div class="modal-content">
 
+              <div class="modal-header">
+                  <h4 class="modal-title">Enter New Info</h4>
+              </div>
+
+              <div class="modal-body register">
+                <form class="newProfileForm">
+                  <h4>Username</h4>
+                  <input type="text" id="newUsername" class="form form-control input-lg">
+                  <h4>Name</h4>
+                  <input type="text" id="newName" class="form form-control input-lg">
+                  <h4>Email</h4>
+                  <input type="email" id="newEmail" class="form form-control input-lg">
+                </form>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="saveNewProfile">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              </div>
+
+          </div>
+      </div>
+  </div>
 </template>

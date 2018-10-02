@@ -10,7 +10,6 @@ Template.createEvents.rendered = function(){
 
 Template.createEvents.events({
   "submit .eventForm" : function(){
-    var eventPicture = event.target.eventPicture.files[0].name;
     var title = event.target.title.value;
     var date = (event.target.date.value).toString();
     var timeFrom = (event.target.timeFrom.value).toString();
@@ -18,7 +17,7 @@ Template.createEvents.events({
     var description = event.target.description.value;
 
     if(notEmpty(title) && notEmpty(description)){
-      Meteor.call('addEvent',eventPicture,title,date,timeFrom,timeTo,description);
+      Meteor.call('addEvent',event.target.eventPicture.files[0].name,title,date,timeFrom,timeTo,description);
 
       event.target.eventPicture.value = "";
       event.target.title.value = "";
