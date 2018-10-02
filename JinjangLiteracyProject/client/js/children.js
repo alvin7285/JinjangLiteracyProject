@@ -17,8 +17,18 @@ Template.children.events({
       else{
         Bert.alert("Please insert a file", "danger", "growl-top-right");
       }
+    },
 
-     },
+  "click #downloadButton": function(){
+    import saveAs from 'file-saver'
+    var data = Children.find({},{ fields: { _id: 0}}).fetch();
+    var csv = Papa.unparse(data);
+        var blob = new Blob([csv],  {type: "text/csv;charset=utf-8"});
+        saveAs(blob, "Children.csv");
+  },
+
+
+
   "click #removeChildren": function(){
     if (confirm("Confirm to delete this event?") == true){
       Meteor.call('removeChildren');

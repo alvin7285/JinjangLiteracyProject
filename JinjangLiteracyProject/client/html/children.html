@@ -1,12 +1,13 @@
 <Template name="children">
   <input name="uploadFile" id="uploadFile" class="uploadFile" type="file"/>
   <button class="btn btn-primary upload" id="uploadButton">Upload file</button>
+  <button class="btn btn-success" id="downloadButton">Download table</button>
   <button class="btn btn-danger" id="removeChildren">Remove All Children</button>
 
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
-        <table class="childrenTable" border="2">
+        <table class="childrenTable" id="childrenTable" border="2">
           <tr>
               <th>Name</th>
               <th>ID</th>
