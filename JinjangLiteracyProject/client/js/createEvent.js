@@ -10,7 +10,7 @@ Template.createEvents.rendered = function(){
 
 Template.createEvents.events({
   "submit .eventForm" : function(){
-    var eventPicture = document.getElementById('eventPicture').files[0].name;
+    var eventPicture = event.target.eventPicture.files[0].name;
     var title = event.target.title.value;
     var date = (event.target.date.value).toString();
     var timeFrom = (event.target.timeFrom.value).toString();
