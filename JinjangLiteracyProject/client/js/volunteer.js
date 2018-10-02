@@ -19,7 +19,7 @@ Template.volunteer.events({
         isEmail(email) && areValidPassword(password,passwordConfirm)){
           Accounts.createUser({
             username:username,
-            name:name,
+            profile: { name: name },
             email:email,
             password:password
           }, function(error){

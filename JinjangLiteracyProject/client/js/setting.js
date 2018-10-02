@@ -17,6 +17,6 @@ Template.setting.helpers({
   },
 
   name: function(){
-    return Meteor.user().name;
+    return Meteor.user().profile.name;
   },
 });
