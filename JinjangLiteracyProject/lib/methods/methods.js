@@ -1,4 +1,9 @@
 if (Meteor.isServer) {
+	Meteor.users.allow({
+    update: function (userId, doc, fieldNames, modifier) {
+           return true;
+        }
+});
 	Meteor.methods({
 		addEvent: function(eventPicture, title, date, timeFrom, timeTo, description) {
 			if(!Meteor.userId()) {

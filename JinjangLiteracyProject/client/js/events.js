@@ -30,7 +30,6 @@ Template.events.events({
     			// Not in the Array, Do stuff.
     			Meteor.call("countUser", thisEvent, username);
     			Bert.alert("You have joined current event", "success", "growl-top-right");
-
     		}
     	},
 
