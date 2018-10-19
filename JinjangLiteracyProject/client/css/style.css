@@ -322,3 +322,11 @@ ul.ul{
 .childrenTable > tr > th{
   width:100px;
 }
+
+.donateDescription{
+  color: #00383e;
+  font-family: 'RockWell';
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.5;
+}
