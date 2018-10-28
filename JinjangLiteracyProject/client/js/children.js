@@ -41,7 +41,7 @@ Template.children.events({
 
 
   "click #removeChildren": function(){
-    if (confirm("Confirm to delete this event?") == true){
+    if (confirm("Confirm to remove all children?") == true){
       Meteor.call('removeChildren');
       Bert.alert("All children info have been removed", "success", "growl-top-right");
     }
